@@ -1,5 +1,5 @@
 pipeline {
-    agent('label UBUNTU_NODE3')
+    agent {'label UBUNTU_NODE3'}
     stages{
         stage('vcs') {
             steps{
