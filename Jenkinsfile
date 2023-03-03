@@ -15,8 +15,8 @@ pipeline {
         }
         stage('post build') {
             steps{
-                archiveArtifact artifacts: '**/target/openmrs-liquibase-2.7.0-SNAPSHOT-tests.jar'
-                                junit '**/surefire-reports/TEST-*.xml'
+                archiveArtifacts artifacts: '**/target/openmrs-liquibase-2.7.0-SNAPSHOT-tests.jar'
+                                 junit '**/surefire-reports/TEST-*.xml'
              }
         }
     }
