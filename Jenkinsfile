@@ -1,10 +1,10 @@
 pipeline {
     agent { label 'UBUNTU_NODE3' }
-    stages{
+    stages {
         stage('vcs') {
             steps{
                 git url: 'https://github.com/srikanthvelma/openmrs-core.git',
-                    branch: declarative
+                    branch: 'declarative'
             }
         }
         stage('build') {
